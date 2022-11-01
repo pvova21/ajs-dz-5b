@@ -1,10 +1,10 @@
-import Character from '../Character';
-import Bowerman from '../Bowerman';
-import Daemon from '../Daemon';
-import Magician from '../Magician';
-import Zombie from '../Zombie';
-import Undead from '../Undead';
-import Swordsman from '../Swordsman';
+import Character from './Character';
+import Bowerman from './Bowerman';
+import Daemon from './Daemon';
+import Magician from './Magician';
+import Zombie from './Zombie';
+import Undead from './Undead';
+import Swordsman from './Swordsman';
 
 test('Наследуется от Character', () => {
   expect(new Character('tor', 'Zombie')).toBeInstanceOf(Character);
@@ -28,9 +28,9 @@ test('Создание нового персонажа Zombie', () => {
 });
 
 test('Создание нового персонажа Bowerman', () => {
-  const received = new Bowerman('tor', 'Bowerman');
+  const received = new Bowerman('Ann', 'Bowerman');
   const expected = {
-    name: 'tor',
+    name: 'Ann',
     type: 'Bowerman',
     health: 100,
     level: 1,
